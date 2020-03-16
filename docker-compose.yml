@@ -31,6 +31,7 @@ services:
       - './static:/usr/src/app/static'
       - './site_static:/usr/src/app/site_static'
       - './templates:/usr/src/app/templates'
+      - './apps/magazine:/usr/src/app/magazine'
     ports:
       - '8000'
     depends_on:

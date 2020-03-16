@@ -34,6 +34,7 @@ if os.environ.get('SITE_HOST'):
 # Application definition
 
 INSTALLED_APPS = [
+    'magazine',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
