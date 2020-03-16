@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# environment variables to be defined externally for security
+# - MYSQL_USER
+# - MYSQL_PASSWORD
+# - MYSQL_ROOT_PASSWORD
