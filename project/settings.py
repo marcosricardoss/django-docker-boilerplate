@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+from django.utils.translation import ugettext_lazy as _
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -189,3 +190,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 if os.environ.get('MEDIA_HOST'):
     MEDIA_DOMAIN = os.environ.get('MEDIA_HOST')
     MEDIA_URL = 'http://%s/' % MEDIA_DOMAIN
+
+# App settings
+
+MAGAZINE_STATUS_CHOICES = (
+    ("imported", _("Imported")),
+    ("draft", _("Draft")),
+    ("published", _("Published")),
+    ("not_listed", _("Not Listed")),
+    ("expired", _("Expired")),
+)
